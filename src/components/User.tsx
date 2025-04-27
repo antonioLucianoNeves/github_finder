@@ -12,6 +12,7 @@ const User = ({
     followers, 
     following, 
     location,
+    repos_url,
 }: UserProps ) => {
   return (
     <div className={classes.user}>
@@ -32,7 +33,7 @@ const User = ({
                 <p className={classes.number}>{following}</p>
             </div>
         </div>
-        <Link to={`/repos/${login}`}>Ver melhores projetos</Link>
+        <Link to={`/repos/${repos_url}`}>Ver melhores projetos</Link>
     </div>
   )
 }
